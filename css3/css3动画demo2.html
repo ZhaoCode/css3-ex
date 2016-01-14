@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .move {
+            width: 100px;
+            height: 100px;
+            background: #00ff21;
+            position: relative;
+            animation-name: move;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            /* Safari and Chrome: */
+            -webkit-animation-name: move;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+
+        @keyframes move {
+            0% {
+                background: #00ff21;
+                left:0px;
+                top:0px;
+            }
+
+            25% {
+                background: #ffd800;
+                left:200px;
+                top:0px;
+            }
+
+            50% {
+                background: #0094ff;
+                left:200px;
+                top:200px;
+            }
+            
+            100% {
+                background: #ff6a00;
+                left:0px;
+                top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="move"></div>
+    </div>
+</body>
+</html>
