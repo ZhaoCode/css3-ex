@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .move {
+            width:100px;
+            height:100px;
+            background:#00ff21;
+            position:relative;
+            animation:move,5s,infinite;
+            -webkit-animation:move 5s infinite; /* Safari and Chrome */
+        }
+        @keyframes move {
+            from {
+                top: 0px;
+            }
+            to {
+                top:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="move">@keyframes</div>
+    </div>
+</body>
+</html>
